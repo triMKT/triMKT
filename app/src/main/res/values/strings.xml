@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">EasyMKT</string>
+    <string name="title_activity_main_login">MainActivityLogin</string>
+    <string name="title_activity_principal_">principal_Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="pricipal_bottom_titulo_activity">pricipalBottomActivity</string>
+
+
+    <!-- TODO: strings bottomNavigation -->
+    <string name="recomendado_titituloMenu">recomendado</string>
+    <string name="emAlta_titituloMenu">em alta</string>
+    <string name="comprasDia_titituloMenu">compras do dia</string>
+    <string name="localizacao_titituloMenu">em alta</string>
+    <string name="listaCompras_titituloMenu">compras do dia</string>
+
+
+    <!-- TODO: strings menu lateral -->
+    <string name="compartilhar">Compartilhar</string>
+    <string name="ajuda">Ajuda</string>
+    <string name="sair">Sair</string>
+    <string name="conta">Conta</string>
+    <string name="favoritos">Favoritos</string>
+</resources>

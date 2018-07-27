@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_recomendado"
+        android:icon="@drawable/ic_recomendado_24dp"
+        android:title="@string/recomendado_titituloMenu" />
+
+    <item
+        android:id="@+id/navigation_emAlta"
+        android:icon="@drawable/ic_em_alta_24dp"
+        android:title="@string/emAlta_titituloMenu" />
+
+    <item
+        android:id="@+id/navigation_comprasDia"
+        android:icon="@drawable/ic_compra_dia_24dp"
+        android:title="@string/comprasDia_titituloMenu" />
+
+    <item
+        android:id="@+id/navigation_listaCompras"
+        android:icon="@drawable/ic_lista_compras_24dp"
+        android:title="@string/comprasDia_titituloMenu" />
+
+    <item
+        android:id="@+id/navigation_localizacao"
+        android:icon="@drawable/ic_localizacao_24dp"
+        android:title="@string/comprasDia_titituloMenu" />
+
+</menu>
