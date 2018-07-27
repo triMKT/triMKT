@@ -196,7 +196,8 @@ public class principal_Activity extends AppCompatActivity
             framePrincipal.setBackgroundResource(R.color.Verde);
             setFragment(comprasDiaFragment);
         } else if (id == R.id.nav_ajuda) {
-
+            framePrincipal.setBackgroundResource(R.color.Verde);
+            setFragment(comprasDiaFragment);
         } else if (id == R.id.nav_compartilhar) {
         }
 
