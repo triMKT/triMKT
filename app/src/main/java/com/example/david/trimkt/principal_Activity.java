@@ -193,7 +193,8 @@ public class principal_Activity extends AppCompatActivity
         } else if (id == R.id.nav_conta) {
 
         } else if (id == R.id.nav_sair) {
-
+            framePrincipal.setBackgroundResource(R.color.Verde);
+            setFragment(comprasDiaFragment);
         } else if (id == R.id.nav_ajuda) {
 
         } else if (id == R.id.nav_compartilhar) {
