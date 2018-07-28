@@ -187,23 +187,33 @@ public class principal_Activity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
-        int id = item.getItemId();
-
-        if (id == R.id.nav_favoritos) {
-        } else if (id == R.id.nav_conta) {
-
-        } else if (id == R.id.nav_sair) {
-            framePrincipal.setBackgroundResource(R.color.Verde);
-            setFragment(comprasDiaFragment);
-        } else if (id == R.id.nav_ajuda) {
-            framePrincipal.setBackgroundResource(R.color.Verde);
-            setFragment(comprasDiaFragment);
-        } else if (id == R.id.nav_compartilhar) {
+        switch (item.getItemId()){
+            case R.id.nav_favoritos:
+                framePrincipal.setBackgroundResource(R.color.Verde);
+                setFragment(comprasDiaFragment);
+                acaoDrawerLayout();
+                return true;
+            case R.id.nav_conta:
+                framePrincipal.setBackgroundResource(R.color.Rosa);
+                setFragment(recomendadoFragment);
+                acaoDrawerLayout();
+                return true;
+            case R.id.nav_sair:
+                acaoDrawerLayout();
+                return true;
+            case R.id.nav_ajuda:
+                acaoDrawerLayout();
+                return true;
+            case R.id.nav_compartilhar:
+                acaoDrawerLayout();
+                return true;
         }
+        return true;
+    }
 
+    public void acaoDrawerLayout(){
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
-        return true;
     }
 
     private void setFragment(Fragment fragment){
@@ -211,5 +221,4 @@ public class principal_Activity extends AppCompatActivity
         fragmentTransaction.replace(R.id.framePrincipal, fragment);
         fragmentTransaction.commit();
     }
-
 }
