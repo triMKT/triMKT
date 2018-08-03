@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "841713314284",
+    "firebase_url": "https://easymkt-2018.firebaseio.com",
+    "project_id": "easymkt-2018",
+    "storage_bucket": "easymkt-2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841713314284:android:9bad12c493105667",
+        "android_client_info": {
+          "package_name": "com.example.david.trimkt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841713314284-crohq9v7hjbc4oc6o2qepvrc47abgtf5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.david.trimkt",
+            "certificate_hash": "bacf129ab1538e0641d352d03a0fea7c6dbb99d2"
+          }
+        },
+        {
+          "client_id": "841713314284-33t4alvuth2tqckv4b6ambvtdu26a78p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRrPVG9cdMbFfnH66wrMke77bUJQAppVg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841713314284-33t4alvuth2tqckv4b6ambvtdu26a78p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
