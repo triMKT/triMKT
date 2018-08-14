@@ -25,4 +25,19 @@ public class MainActivityLogin extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onClickRegistrar(View v){
+        Intent intent = new Intent(this.getApplicationContext(), registrarActivity.class);
+        startActivity(intent);
+    }
+    public void onClickLoginFacebook(View v){
+
+    }
+
+    public void onClickLoginGoogle(View v){
+
+    }
+
+
+
+
 }

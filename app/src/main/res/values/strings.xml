@@ -14,8 +14,7 @@
     <!-- TODO: strings bottomNavigation -->
     <string name="recomendado_titituloMenu">recomendado</string>
     <string name="emAlta_titituloMenu">em alta</string>
-    <string name="comprasDia_titituloMenu">compras do dia</string>
-    <string name="localizacao_titituloMenu">em alta</string>
+    <string name="procurar_titituloMenu">procurar</string>
     <string name="listaCompras_titituloMenu">compras do dia</string>
 
 
@@ -25,4 +24,7 @@
     <string name="sair">Sair</string>
     <string name="conta">Conta</string>
     <string name="favoritos">Favoritos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

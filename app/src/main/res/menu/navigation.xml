@@ -12,18 +12,13 @@
         android:title="@string/emAlta_titituloMenu" />
 
     <item
-        android:id="@+id/navigation_comprasDia"
-        android:icon="@drawable/ic_compra_dia_24dp"
-        android:title="@string/comprasDia_titituloMenu" />
+        android:id="@+id/navigation_pesquisar"
+        android:icon="@drawable/ic_procurar_24dp"
+        android:title="@string/procurar_titituloMenu" />
 
     <item
         android:id="@+id/navigation_listaCompras"
         android:icon="@drawable/ic_lista_compras_24dp"
-        android:title="@string/comprasDia_titituloMenu" />
-
-    <item
-        android:id="@+id/navigation_localizacao"
-        android:icon="@drawable/ic_localizacao_24dp"
-        android:title="@string/comprasDia_titituloMenu" />
+        android:title="@string/listaCompras_titituloMenu" />
 
 </menu>

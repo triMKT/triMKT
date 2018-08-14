@@ -20,6 +20,7 @@
             android:name=".principal_Activity"
             android:label="@string/title_activity_principal_"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".registrarActivity"></activity>
     </application>
 
 </manifest>

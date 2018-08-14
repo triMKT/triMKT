@@ -29,9 +29,9 @@ public class principal_Activity extends AppCompatActivity
 
     private Fragment recomendadoFragment;
     private Fragment emAltaFragment;
-    private Fragment comprasDiaFragment;
+    private Fragment procurarFragment;
     private Fragment listaComprasFragment;
-    private Fragment localizacaoFragment;
+
 
     private FrameLayout framePrincipal;
     private BottomNavigationView bottomNavigation;
@@ -52,20 +52,15 @@ public class principal_Activity extends AppCompatActivity
                     framePrincipal.setBackgroundResource(R.color.Azul);
                     setFragment(emAltaFragment);
                     return true;
-                case R.id.navigation_comprasDia:
+                case R.id.navigation_pesquisar:
 //                    bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
                     framePrincipal.setBackgroundResource(R.color.Verde);
-                    setFragment(comprasDiaFragment);
+                    setFragment(procurarFragment);
                     return true;
                 case R.id.navigation_listaCompras:
 //                    bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
                     framePrincipal.setBackgroundResource(R.color.Vermelho);
                     setFragment(listaComprasFragment);
-                    return true;
-                case R.id.navigation_localizacao:
-//                    bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
-                    framePrincipal.setBackgroundResource(R.color.Rosa);
-                    setFragment(localizacaoFragment);
                     return true;
             }
             return false;
@@ -85,9 +80,8 @@ public class principal_Activity extends AppCompatActivity
         //Inicializando fragments
         recomendadoFragment = new recomendadoFragment();
         emAltaFragment = new emAltaFragment();
-        comprasDiaFragment = new comprasDiaFragment();
+        procurarFragment = new procurarFragment();
         listaComprasFragment = new listaComprasFragment();
-        localizacaoFragment = new localizacaoFragment();
 
         //Inicializando FrameLayout//BottomNavigationView -> activity_principal_bottom
         framePrincipal = (FrameLayout) findViewById(R.id.framePrincipal) ;
@@ -190,7 +184,7 @@ public class principal_Activity extends AppCompatActivity
         switch (item.getItemId()){
             case R.id.nav_favoritos:
                 framePrincipal.setBackgroundResource(R.color.Verde);
-                setFragment(comprasDiaFragment);
+                setFragment(procurarFragment);
                 acaoDrawerLayout();
                 return true;
             case R.id.nav_conta:
