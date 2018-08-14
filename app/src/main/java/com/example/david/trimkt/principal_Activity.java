@@ -22,7 +22,6 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
-import android.widget.TextView;
 
 public class principal_Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -31,6 +30,8 @@ public class principal_Activity extends AppCompatActivity
     private Fragment emAltaFragment;
     private Fragment procurarFragment;
     private Fragment listaComprasFragment;
+
+    private Fragment ListaComprasProdutos;
 
 
     private FrameLayout framePrincipal;
@@ -59,8 +60,8 @@ public class principal_Activity extends AppCompatActivity
                     return true;
                 case R.id.navigation_listaCompras:
 //                    bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
-                    framePrincipal.setBackgroundResource(R.color.Vermelho);
-                    setFragment(listaComprasFragment);
+//                    framePrincipal.setBackgroundResource(R.color.Vermelho);
+                    setFragment(ListaComprasProdutos);
                     return true;
             }
             return false;
@@ -81,7 +82,10 @@ public class principal_Activity extends AppCompatActivity
         recomendadoFragment = new recomendadoFragment();
         emAltaFragment = new emAltaFragment();
         procurarFragment = new procurarFragment();
-        listaComprasFragment = new listaComprasFragment();
+        listaComprasFragment = new listaComprasMenuFragment();
+
+        ListaComprasProdutos = new listaDeCompraFragment();
+
 
         //Inicializando FrameLayout//BottomNavigationView -> activity_principal_bottom
         framePrincipal = (FrameLayout) findViewById(R.id.framePrincipal) ;
@@ -111,7 +115,7 @@ public class principal_Activity extends AppCompatActivity
 //                        return true;
 //                    case R.id.navigation_listaCompras:
 //                        bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
-////                        setFragment(listaComprasFragment);
+////                        setFragment(listaComprasMenuFragment);
 //                        return true;
 //                    case R.id.navigation_localizacao:
 //                        bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
