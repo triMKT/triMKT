@@ -12,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.david.trimkt.Class.Produto;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,11 +50,23 @@ public class listaDeCompraFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         listaProduto = new ArrayList<>();
-        listaProduto.add(new Produto("beringela","99,99",R.drawable.beringela));
-        listaProduto.add(new Produto("beringela","99,99",R.drawable.beringela));
-        listaProduto.add(new Produto("beringela","99,99",R.drawable.beringela));
-        listaProduto.add(new Produto("beringela","99,99",R.drawable.beringela));
-        listaProduto.add(new Produto("Peringela","99,99",R.drawable.beringela));
-        listaProduto.add(new Produto("beringela","99,99",R.drawable.beringela));
+        listaProduto.add(new Produto("beringela","99,99",R.drawable.berinjela_capa));
+        listaProduto.add(new Produto("beringela","99,99",R.drawable.berinjela_capa));
+        listaProduto.add(new Produto("beringela","99,99",R.drawable.berinjela_capa));
+        listaProduto.add(new Produto("beringela","99,99",R.drawable.berinjela_capa));
+        listaProduto.add(new Produto("Peringela","99,99",R.drawable.berinjela_capa));
+        listaProduto.add(new Produto("beringela","99,99",R.drawable.berinjela_capa));
+        listaProduto.add(new Produto("beringela","99,99",R.drawable.berinjela_capa));
+        listaProduto.add(new Produto("beringela","99,99",R.drawable.berinjela_capa));
+        listaProduto.add(new Produto("beringela","99,99",R.drawable.berinjela_capa));
+        listaProduto.add(new Produto("beringela","99,99",R.drawable.berinjela_capa));
+        listaProduto.add(new Produto("beringela","99,99",R.drawable.berinjela_capa));
+        listaProduto.add(new Produto("beringela","99,99",R.drawable.berinjela_capa));
+        listaProduto.add(new Produto("beringela","99,99",R.drawable.berinjela_capa));
+        listaProduto.add(new Produto("beringela","99,99",R.drawable.berinjela_capa));
+        listaProduto.add(new Produto("beringela","99,99",R.drawable.berinjela_capa));
+        listaProduto.add(new Produto("beringela","99,99",R.drawable.berinjela_capa));
+        listaProduto.add(new Produto("beringela","99,99",R.drawable.berinjela_capa));
+
     }
 }

@@ -2,6 +2,11 @@ package com.example.david.trimkt;
 
 import android.os.Bundle;
 
+import com.example.david.trimkt.menu_fragments.emAltaFragment;
+import com.example.david.trimkt.menu_fragments.listaComprasMenuFragment;
+import com.example.david.trimkt.menu_fragments.procurarFragment;
+import com.example.david.trimkt.menu_fragments.recomendadoFragment;
+import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -33,7 +38,6 @@ public class principal_Activity extends AppCompatActivity
 
     private Fragment ListaComprasProdutos;
 
-
     private FrameLayout framePrincipal;
     private BottomNavigationView bottomNavigation;
 
@@ -44,23 +48,23 @@ public class principal_Activity extends AppCompatActivity
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_recomendado:
-//                    bottomNavigation.setItemBackgroundResource(R.color.colorAccent);
+
                     framePrincipal.setBackgroundResource(R.color.Amarelo);
                     setFragment(recomendadoFragment);
                     return true;
                 case R.id.navigation_emAlta:
-//                    bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
+//                    getActionBar().setTitle(principal_Activity.class.getSimpleName());
                     framePrincipal.setBackgroundResource(R.color.Azul);
                     setFragment(emAltaFragment);
                     return true;
                 case R.id.navigation_pesquisar:
-//                    bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
+//                    getActionBar().setTitle(principal_Activity.class.getSimpleName());
                     framePrincipal.setBackgroundResource(R.color.Verde);
                     setFragment(procurarFragment);
                     return true;
                 case R.id.navigation_listaCompras:
-//                    bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
-//                    framePrincipal.setBackgroundResource(R.color.Vermelho);
+//                    getActionBar().setTitle(principal_Activity.class.getSimpleName());
+                    framePrincipal.setBackgroundResource(R.color.Vermelho);
                     setFragment(ListaComprasProdutos);
                     return true;
             }
@@ -76,6 +80,10 @@ public class principal_Activity extends AppCompatActivity
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        
+
 
 
         //Inicializando fragments
@@ -95,37 +103,6 @@ public class principal_Activity extends AppCompatActivity
 
         BottomNavigationView navigation = findViewById(R.id.bottomNavigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
-
-//        bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//                switch (item.getItemId()) {
-//                    case R.id.navigation_recomendado:
-//                        bottomNavigation.setItemBackgroundResource(R.color.colorPrimary);
-////                        setFragment(recomendadoFragment);
-//                        return true;
-//                    case R.id.navigation_emAlta:
-//                        bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
-////                        setFragment(emAltaFragment);
-//                        return true;
-//                    case R.id.navigation_comprasDia:
-//                        bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
-////                        setFragment(comprasDiaFragment);
-//                        return true;
-//                    case R.id.navigation_listaCompras:
-//                        bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
-////                        setFragment(listaComprasMenuFragment);
-//                        return true;
-//                    case R.id.navigation_localizacao:
-//                        bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
-////                        setFragment(localizacaoFragment);
-//                        return true;
-//                    default:
-//                        return false;
-//                }
-//            }
-//        });
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -220,3 +197,43 @@ public class principal_Activity extends AppCompatActivity
         fragmentTransaction.commit();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+//        bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//                switch (item.getItemId()) {
+//                    case R.id.navigation_recomendado:
+//                        bottomNavigation.setItemBackgroundResource(R.color.colorPrimary);
+////                        setFragment(recomendadoFragment);
+//                        return true;
+//                    case R.id.navigation_emAlta:
+//                        bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
+////                        setFragment(emAltaFragment);
+//                        return true;
+//                    case R.id.navigation_comprasDia:
+//                        bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
+////                        setFragment(comprasDiaFragment);
+//                        return true;
+//                    case R.id.navigation_listaCompras:
+//                        bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
+////                        setFragment(listaComprasMenuFragment);
+//                        return true;
+//                    case R.id.navigation_localizacao:
+//                        bottomNavigation.setItemBackgroundResource(R.color.colorPrimaryDark);
+////                        setFragment(localizacaoFragment);
+//                        return true;
+//                    default:
+//                        return false;
+//                }
+//            }
+//        });

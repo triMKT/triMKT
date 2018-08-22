@@ -18,11 +18,14 @@ public class registrarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_registrar);
 
 
-        fbDB.child("aoooo").setValue("1000");
+
+
+
+//        fbDB.child("aoooo").setValue("1000");
 
     }
 
     public void onClickButton(View v){
-        fbDB.setValue("Aooo");
+//        fbDB.setValue("Aooo");
     }
 }
